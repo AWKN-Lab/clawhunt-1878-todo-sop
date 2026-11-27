@@ -1,0 +1,19 @@
+=== A 相：原代码 pytest ===
+.................................                                        [100%]
+33 passed in 0.09s
+
+
+=== B 相 M1：变异 src/todo_sop/tools.py ===
+失败测试：['test_salesperson_team_raises_permission_error', 'test_second_salesperson_team_raises_permission_error']
+M1 变红，目标断言失败，符合预期
+=== B 相 M2：变异 src/todo_sop/tools.py ===
+失败测试：['test_overdue_contains_only_overdue', 'test_overdue_excludes_today_and_future', 'test_overdue_sorted_by_due_ascending']
+M2 变红，目标断言失败，符合预期
+=== B 相 M3：变异 src/todo_sop/tools.py ===
+失败测试：['test_overdue_step_returns_true', 'test_sop_progress_reports_blocked_step', 'test_sop_render_marks_overdue']
+M3 变红，目标断言失败，符合预期
+=== C 相：原文件未变 + 重跑 pytest ===
+.................................                                        [100%]
+33 passed in 0.08s
+
+MUTATION CHECK: PASS
