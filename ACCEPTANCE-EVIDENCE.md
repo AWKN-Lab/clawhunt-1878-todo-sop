@@ -29,7 +29,12 @@
   - 原文件 SHA256 未变，重跑 33 passed
 - 一键复跑：SELFTEST: PASS（见 evidence/selftest-setup-sh-20261127.log）
 - MANIFEST：sha256sum -c 全 OK
-- 全新克隆验证：（推送后补填 HEAD 与日志）
+- 全新克隆验证：HEAD 19a931f24d32380b1223202e7a6b6c270967007c 上 bash setup.sh 实测
+  SELFTEST: PASS（33 passed，克隆目录 ~/.tmp-1878-clone-verify，验完已删；
+  日志在工作目录 1878-clone-verify-20261127.log）
+- 样品仓：https://github.com/AWKN-Lab/clawhunt-1878-todo-sop
+  （HEAD 19a931f24d32380b1223202e7a6b6c270967007c，31 个文件，读回 ref 与递归 tree
+  核对 blob SHA 全一致、无多余文件）
 
 ## 已知限制
 
